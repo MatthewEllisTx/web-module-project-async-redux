@@ -19,8 +19,8 @@ export default function Post(props){
         <p>{score}</p>
         <p>DOWN</p>
       </DivUpVotesStyled>
-      <DivImageStyled>
-        <img src={(thumbnail !== 'self' && thumbnail !== 'default') ? thumbnail : 'http://sangervilleme.com/wp-content/plugins/slider/images/noimage.png'} alt=''/>
+      <DivImageStyled src={(thumbnail !== 'self' && thumbnail !== 'default') ? thumbnail : 'http://sangervilleme.com/wp-content/plugins/slider/images/noimage.png'}>
+        {/* <img src={(thumbnail !== 'self' && thumbnail !== 'default') ? thumbnail : 'http://sangervilleme.com/wp-content/plugins/slider/images/noimage.png'} alt=''/> */}
       </DivImageStyled>
       <DivTextStyled>
         <p>r/{subreddit}</p>
@@ -61,8 +61,11 @@ const DivUpVotesStyled = styled.div`
 `
 
 const DivImageStyled = styled.div`
+  background-image: url(${ props => props.src});
+  background-size: contain; // doing it this way because it was faster than make a 140x140 px image
   margin: 0 10px;
   max-height: 140px;
+  min-height: 140px;
   width: 140px;
 `
 
