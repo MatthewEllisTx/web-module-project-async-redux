@@ -50,6 +50,7 @@ const DivBoxStyled = styled.div`
 
   a {
     color: #58A6FF;
+    text-decoration: none;
   }
 `
 
