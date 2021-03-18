@@ -39,6 +39,7 @@ function App(props) {
       <div style={{ width: '50%', margin: '0 auto', minWidth: '400px',}} onScroll={handleScroll}>
         <Posts />
       </div>
+      {loading && <h3 style={{textAlign: 'center'}}>Loading...</h3>}
     </div>
   );
 }
