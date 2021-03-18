@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 import axios from 'axios';
 
-import { client_id, client_secret} from './authStuff/authStuff'
+import { client_id, client_secret} from './authStuff/authStuff';
+
+import Posts from './components/Posts';
 
 function App() {
   // const [res, setRes] = useState('')
@@ -38,7 +40,7 @@ function App() {
 
   return (
     <div>
-
+      <Posts />
     </div>
   );
 }
