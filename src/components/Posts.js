@@ -1,16 +1,18 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { getPosts } from '../store/actions/actions';
 
 import Post from './Post';
 
 function Posts(props){
-  const { getPosts, posts } = props
+  // const { getPosts, posts } = props
+  const { posts } = props
   console.log(posts)
 
-  useEffect(() => {
-    getPosts()
-  }, [getPosts])
+  // useEffect(() => {
+  //   getPosts()
+  // }, [getPosts])
 
   return (
     <div>

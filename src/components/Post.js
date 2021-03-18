@@ -38,7 +38,6 @@ export default function Post(props){
 
 const DivBoxStyled = styled.div`
   background-color: #161B22;
-  /* border: 1px solid #DCE6E7; */
   box-shadow: 0 0 2px 1px #343536;
   border-radius: 5px;
   display: flex;

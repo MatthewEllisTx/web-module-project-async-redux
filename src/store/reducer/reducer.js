@@ -2,6 +2,7 @@ import { START_LOADING, GET_POSTS_SUCCESS, GET_POSTS_FAIL } from '../actions/act
 
 const initialState = {
   loading: false,
+  after: '',
   posts: [],
   error: '',
 }
@@ -17,7 +18,8 @@ export default function reducer(state = initialState, action){
       return {
         ...state,
         loading: false,
-        posts: action.data,
+        posts: [...state.posts, ...action.data],
+        after: action.after,
         error: '',
       }
     case GET_POSTS_FAIL:
