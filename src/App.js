@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import axios from 'axios';
 
-import { client_id, client_secret} from './authStuff/authStuff';
+import { client_id, client_secret} from './auth';
 
 import Posts from './components/Posts';
 import { getPosts } from './store/actions/actions';
