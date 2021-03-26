@@ -5,7 +5,7 @@ export default function Post(props){
   const { subreddit,
     author_fullname,
     title,
-    link_flair_text,
+    // link_flair_text,
     thumbnail,
     score,
     url,
